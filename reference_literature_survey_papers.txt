@@ -1,0 +1,103 @@
+Title: An Enhanced PID-Based Motion Control Framework for Line-Following Robot
+
+Section		Content
+Title		An Enhanced PID-Based Motion Control Framework for Autonomous Line-Following Robot
+Authors		Girish Chandrappa, Riga Technical University
+DOI		10.30574/wjarr.2025.26.3.2275
+Work Done	Developed an autonomous robot using ESP32, TCRT5000 IR sensors, L298N motor driver, and two DC motors. The IR sensors detect the predefined line/path, while the ESP32 processes the sensor data and controls the motors through the L298N driver. A PID controller is used to adjust motor speeds for smoother movement and turning. The paper also presents the physical robot platform and its sensor/motor-driver configuration.
+Results		The robot achieved stable line tracking and smoother motion, particularly during turns and sudden changes in direction, through PID-based motor-speed correction.
+Research Gap	The system mainly focuses on line-following and motion control. It does not address location-specific stopping, product identification, or product handling. This creates scope for extending the predefined-path robot toward automated dark-store product transportation and handling.
+Reference	An Enhanced PID-Based Motion Control Framework for Autonomous Line-Following Robot, 2026.
+
+Title: Robot Edukasi Object Detection Dengan Platform Edge Impulse
+
+Section	Content
+Title		Robot Edukasi Object Detection Dengan Platform Edge Impulse
+Authors		Tekom University researchers
+Work Done	Developed an AI-enabled robot using ESP32-CAM for vision/object detection and ESP32 as the main controller. The object-detection model was trained using Edge Impulse with the FOMO architecture and deployed directly on the embedded hardware.
+Results		The trained model achieved 99.8% training accuracy with a compact model size of 82.3 KB. The robot achieved 100% detection success under optimal lighting, while performance decreased to 80% under less favorable lighting conditions.
+Research Gap	The system demonstrates embedded object detection but is not specifically designed for dark-store product recognition and autonomous product searching. It does not integrate product-location information, predefined robot paths, or product-specific handling.
+Reference	Robot Edukasi Object Detection Dengan Platform Edge Impulse, eProceedings of Engineering, Telkom University.
+
+Title: ESP32-S3 Object Identification using Edge Impulse
+
+Section	Content
+Title	ESP32-S3 Object Identification using Edge Impulse
+Platform	XIAO ESP32-S3 + OV2640 Camera + Edge Impulse
+Work Done	Developed an embedded object-identification system using the ESP32-S3 camera platform. Images of different objects such as apple, banana, broccoli, and chilli were used to train an Edge Impulse model. The trained model was deployed on the ESP32-S3 to perform local image-based object recognition.
+Results	The ESP32-S3 successfully captured images and performed on-device predictions for the trained object classes, demonstrating that object recognition can be performed directly on a compact microcontroller-camera platform without requiring continuous cloud processing.
+Research Gap	The implementation focuses on object identification as a standalone embedded-vision application. It does not integrate the recognition system with an autonomous mobile robot, predefined-path navigation, product-location searching, or dark-store product handling.
+Reference	Tiny Prism Labs, “ESP32-S3 Object Identification using Edge Impulse,” GitHub.
+Technical reference: XIAO ESP32-S3 + Edge Impulse Object Identification.
+
+Title: Design and Implementation of a Low-Cost IoT-Based Robotic Arm for Product Feeding and Sorting in Manufacturing Lines
+
+Section		Content
+Title		Design and Implementation of a Low-Cost IoT-Based Robotic Arm for Product Feeding and Sorting in Manufacturing Lines
+Authors		Serdar Yilmaz, Canan Akay, Feyzi Kaysi
+Journal 	Electronics, 2025, 14, 4801
+DOI 		10.3390/electronics14244801
+Work Done	Developed a low-cost automated product handling system using an ESP32 controller, servo motors, a 4-DOF mechanism and a parallel-jaw gripper. The system identifies products and automatically picks them from a conveyor and places them at predefined destinations. The ESP32 controls the sensing, decision-making and servo actuation.
+Results		The system successfully performed automated product feeding and sorting. Experimental testing reported an average 4.8 ± 0.3 s cycle time, 98.7% product-identification accuracy, and approximately ±1.2° servo positioning error.
+Research Gap	The system relies on RFID-based product identification and predefined conveyor locations. It does not perform camera/AI-based product recognition followed by autonomous searching and picking in a dark-store environment. This provides scope for integrating Edge Impulse-based vision recognition with mobile path navigation and automated product handling.
+Reference	S. Yilmaz, C. Akay, and F. Kaysi, “Design and Implementation of a Low-Cost IoT-Based Robotic Arm for Product Feeding and Sorting in Manufacturing Lines,” Electronics, vol. 14, no. 24, 4801, 2025, doi: 10.3390/electronics14244801.
+
+Title: Design, Development, and Experimental Validation of an Autonomous Material Handling Robot for Warehouse Automation
+
+Section		Content
+Title		Design, Development, and Experimental Validation of an Autonomous Material Handling Robot for Warehouse Automation
+Authors		Chetan Zaware, Ramesh Gadakh, Pradeep Patil, Mayur Gitay, Javed Shaikh, Amol Ghule
+Work Done	Developed an autonomous warehouse robot integrating camera-based object detection, autonomous navigation, sensor fusion, and intelligent item handling. The system uses cameras, LiDAR and IMU sensors, with YOLOv5 for object detection and a Deep Q Network for navigation. An ESP32 is used in the hardware control layer.
+Results		Physical validation achieved 94.2% navigation success, 94.7% object-detection mAP, 97.8% correct-item-picking accuracy, and 87.3% robot utilization.
+Research Gap	The system uses a relatively complex architecture involving LiDAR, ROS, Jetson Xavier NX, YOLOv5, SLAM and reinforcement learning. It does not specifically address lightweight ESP32-S3-based product recognition, predefined-path navigation, or a compact servo-driven product handling mechanism for dark-store applications. This creates scope for developing a simpler, low-cost integrated solution.
+Reference	C. Zaware et al., “Design, Development, and Experimental Validation of an Autonomous Material Handling Robot for Warehouse Automation,” Aposta: Revista de Ciencias Sociales, vol. 24, no. 114, e1008, 2026, DOI: 10.23900/ra.v24i114.1008.
+Full paper: Aposta — Full Research Paper and Article Page
+
+Title: Vision-Based Mobile Handling for Dark Store Products
+
+Year: 		2022
+Journal: 	Mathematical Problems in Engineering
+DOI: 		10.1155/2022/3883845
+Authors: 	M. Z. U. Rahman, M. Usman, A. Farea, N. Ahmad, I. Mahmood, M. Imran (2022)
+Journal: 	Mathematical Problems in Engineering 
+Work Done: 	Developed a mobile handling system using a 4-wheeled differential-drive platform, line-following navigation, barcode recognition (for section localization), and SIFT-based camera vision. A 5-DOF robotic arm picks the identified product and places it at the target location.
+Results: 	The prototype successfully validated line navigation, barcode section mapping, visual object detection, and 5-DOF pick-and-place actions. The study includes kinematic analysis (forward/inverse) and torque calculations.
+Research Gap: 	The system uses a Raspberry Pi with traditional SIFT detection and barcodes. It lacks a lightweight edge AI setup (like ESP32-S3 + Edge Impulse) and does not integrate real-time customer orders with autonomous dark-store searching.
+Citation: 	M. Z. U. Rahman et al., “Vision-Based Mobile Manipulator for Handling and Transportation of Supermarket Products,” Mathematical Problems in Engineering, 2022, Art. 3883845.
+
+Title: A Review of High-Compute Shelf-Stocking Robots and the Scope for ESP32-S3 Edge Solutions
+
+Authors: 	Peter Kmecl, Marko Munih, Janez Podobnik
+Year: 		2024
+Journal: 	Sensors, 24(20), 6687
+DOI: 		10.3390/s24206687
+Work Done	Developed a vision-based robotic system for picking and stocking retail products in densely packed shelf environments. The setup integrates RGB-D vision, neural-network object detection, point-cloud processing, and robotic manipulation.
+Results		Evaluated using real retail products, the system proved robust in grasp success and object detection across repeated trials with both flat and curved items, even when handling detection errors.
+Research Gap	The current system relies on complex hardware and high computing power (RGB-D/LiDAR and heavy neural processing) tailored solely for shelf manipulation. This leaves an opportunity to develop a lightweight, mobile alternative using an ESP32-S3 camera, Edge Impulse, predefined-path navigation, and a servo-driven handling mechanism for autonomous product searching.
+Reference	P. Kmecl, M. Munih, and J. Podobnik, “Towards Autonomous Retail Stocking and Picking: Methods Enabling Robust Vacuum-Based Robotic Manipulation in Densely Packed Environments,” Sensors, vol. 24, no. 20, 6687, 2024. doi: 10.3390/s24206687.
+
+Title: Enhanced Force Estimation and Autonomous Force Tuning Through Fusion of Tactile Sensor and Quasi-Direct Drive Gripper
+
+Published in: 	IEEE Sensors Journal, 2025
+DOI: 		10.1109/JSEN.2024.3504717
+
+Section		Content
+Title		Enhanced Force Estimation and Autonomous Force Tuning Through Fusion of Tactile Sensor and Quasi-Direct Drive Gripper
+Work Done	Developed a gripper system combining a tactile pressure sensor and gripper actuator to estimate grasping force and automatically adjust the gripping force. The system uses tactile feedback to determine whether sufficient force is being applied and to reduce the possibility of product slipping.
+Results		The proposed sensor-fusion method improved force estimation and enabled automatic grip-force adjustment. A slip-detection and control mechanism successfully grasped and lifted different objects with more than 90% success rates.
+Research Gap	The system uses a sophisticated tactile sensing and quasi-direct-drive setup. It does not specifically address a low-cost ESP32-controlled servo gripper for dark-store product handling. Your work can investigate a simpler force/contact-feedback mechanism suitable for embedded implementation.
+Reference	Enhanced Force Estimation and Autonomous Force Tuning Through Fusion of Tactile Sensor and Quasi-Direct Drive Gripper, IEEE Sensors Journal, 2025, DOI: 10.1109/JSEN.2024.3504717.
+IEEE Xplore — Full Paper
+
+Title: Deep Learning LSTM-Based Slip Detection for Robotic Grasping
+
+Conference: 	IEEE IECON 2023
+DOI: 		10.1109/IECON51785.2023.10311615
+
+Section		Content
+Title		Deep Learning LSTM-Based Slip Detection for Robotic Grasping
+Work Done	Developed a tactile-feedback-based system for detecting object slipping during robotic grasping. Tactile sensors were placed at the gripper fingertips and used to monitor the grasp during lifting.
+Results		The system successfully detected slipping and demonstrated that slip feedback can be used to improve grasp stability and prevent objects from being dropped.
+Research Gap	The system relies on tactile imaging and deep-learning-based slip detection, which is more complex than required for your embedded robot. A simpler pressure/contact threshold with ESP32 feedback could provide a lightweight method for determining whether the product has been securely picked.
+Reference	Deep Learning LSTM-Based Slip Detection for Robotic Grasping, 2023 IEEE 49th Annual Conference of the IEEE Industrial Electronics Society (IECON), DOI: 10.1109/IECON51785.2023.10311615.
+IEEE Xplore — Deep Learning LSTM-Based Slip Detection
