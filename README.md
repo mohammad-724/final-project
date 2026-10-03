@@ -8,7 +8,4 @@ Batch-3 - Project Abstract
 reference literature survey papers text file
 
 
-Literature_review_ppt*2
-
-
 Literature_survey_report.pptx---most recent and most relevant papers which reflects our project
